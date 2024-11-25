@@ -9,6 +9,11 @@ body, html {
     width: 100%;
 }
 
+img{
+    width: 24px;
+    height: 24px;
+}
+
 .layout {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -62,8 +67,55 @@ header {
     grid-column: 2 /3;
     grid-row: 1/2;
     border: 2px solid red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+ header * {
+    border: 1px dashed rgb(255, 0, 0);
+ }
+
+.header-bottom{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.greeting{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 main{
     border: 2px solid red;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+main * {
+    border: 1px dashed rgb(255, 0, 0);
+ }
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+}
+
+.main-sidebar{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main-sidebar-1{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.main-sidebar-2{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
 }
