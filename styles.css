@@ -43,8 +43,9 @@ a {
 }
 
 .sidebar-brand img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: auto;
+    filter: brightness(0) invert(1);
 }
 
 .sidebar-nav{
@@ -64,6 +65,7 @@ a {
 .sidebar-nav img {
     width: 24px;
     height: 24px;
+    filter: brightness(0) invert(1);
 }
 
 .sidebar-footer{
@@ -77,6 +79,7 @@ a {
 .sidebar-footer img {
     width: 24px;
     height: 24px;
+    filter: brightness(0) invert(1);
 }
 
 header {
@@ -111,6 +114,26 @@ header {
 .header-bottom{
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.action-button button{
+    background-color: #0961ee;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin-right: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.action-button button:hover {
+   background-color: #147ab1;
+}
+
+.action-button button:last-child {
+   margin-right: 0;
 }
 
 .greeting{
@@ -151,6 +174,21 @@ main{
     background-color: white;
     border-left: 8px solid rgb(236, 208, 0);
     border-radius: 8px;
+    padding: 24px;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.project-info p {
+    color: #666;
+    margin-top: 8px;
+}
+
+.project-actions{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .main-sidebar{
@@ -161,31 +199,55 @@ main{
 
 .main-sidebar-1{
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+}
+
+.main-sidebar-1 h3 {
+    margin-bottom: 8px;
 }
 
 .announcements-container{
     background-color: white;
     border-radius: 8px;
-    padding: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-around;
 }
 
-.announcement{
+.announcement:not(:last-child){
     border-bottom: 2px solid gray;
+    margin-bottom: 8px;
 }
+
+.announcement h4 {
+    color: black;
+    margin-bottom: 4px;
+}
+ 
+ .announcement p {
+    color: #64748b;
+    font-size: 0.9rem;
+ }
 
 .main-sidebar-2{
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: auto 1fr;
 }
 
 .trending-container{
     background-color: white;
     border-radius: 8px;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .trending-user{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 12px;
+    align-items: center;
 }
