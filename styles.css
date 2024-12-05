@@ -217,8 +217,9 @@ main{
 }
 
 .announcement:not(:last-child){
+    padding: 8px;
     border-bottom: 2px solid gray;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .announcement h4 {
